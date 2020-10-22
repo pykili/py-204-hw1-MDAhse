@@ -1,4 +1,6 @@
-# your code here
 user_input = input()
-# your code here
-print(alphabet)
+b = user_input[0]
+for i in user_input:
+	if i not in b:
+		b = b+i
+print(b)
