@@ -18,7 +18,7 @@ while n < 10:
 			elif c[k]=='\t' and l != 0 and p != 0 and g ==0:
 				g=k
 			k=k+1
-		if c[l+1:p]!= c[p+1:g] and (p-l-1 < g-p-1 or c[p+1:g] != c[l+1:l+g-p]):
+		if c[l+1:p]!= c[p+1:g] and (p-l < g-p or c[p+1:g] != c[l+1:l+g-p]):
 				print(c[l+1:p])
 				print(c[p+1:g])
 		n = n + 1
